@@ -1,9 +1,20 @@
+<div style='width:640px;height:480px;max-width:100%'>
+    <div id='game'></div>
+</div>
 
-<!DOCTYPE html>
-<html>
-<body>
-    <script src="wasmpsx.min.js"></script>
-    <wasmpsx-player id="my-wasmpsx-element"></wasmpsx-player>
-    <script>document.getElementById('my-wasmpsx-element').loadUrl('/rat.bin');</script>
-</body>
-</html>
+<script type='text/javascript'>
+    EJS_player = '#game';
+    
+    // Can also be mednafen_psx or mednafen_psx_hw
+    EJS_core = 'mednafen_psx_hw';
+    
+    // URL to BIOS file
+    EJS_biosUrl = 'scph5501.bin';
+    
+    // URL to Game rom
+    EJS_gameUrl = 'rat.exe';
+    
+    // Path to the data directory
+    EJS_pathtodata = 'data/';
+</script>
+<script src='data/loader.js'></script>
